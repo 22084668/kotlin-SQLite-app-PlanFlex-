@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".personal_details_input">
+
+
+    <ScrollView
+        android:layout_width="394dp"
+        android:layout_height="806dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="370dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="31dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+            <EditText
+                android:id="@+id/editTextText8"
+                android:layout_width="79dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="27dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="@string/work_time_to"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColorHint="@color/hint"
+                app:layout_constraintStart_toEndOf="@+id/editTextText7"
+                app:layout_constraintTop_toBottomOf="@+id/textInputEditText4"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="35dp"
+                android:text="@string/work_time"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditText4"
+                android:layout_width="196dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/white"
+                android:hint="@string/jb_type"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                app:layout_constraintStart_toEndOf="@+id/textView24"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTime1"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="35dp"
+                android:text="@string/who"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView23"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/editTextTime1"
+                android:layout_width="195dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="39dp"
+                android:layout_marginTop="22dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:inputType="time"
+                app:layout_constraintStart_toEndOf="@+id/textView23"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTime"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="31dp"
+                android:text="@string/sleep_time"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView22"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="67dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="58dp"
+                android:background="@color/white"
+                android:hint="@string/day"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                app:layout_constraintStart_toEndOf="@+id/textInputEditText3"
+                app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditText2"
+                android:layout_width="157dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:hint="@string/Year"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditText3"
+                android:layout_width="67dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="58dp"
+                android:background="@color/white"
+                android:hint="@string/month"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                app:layout_constraintStart_toEndOf="@+id/textInputEditText2"
+                app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/personal_data_input"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="114dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="-170dp"
+                android:src="@drawable/profile"
+                app:layout_constraintEnd_toStartOf="@+id/editTextText6"
+                app:layout_constraintTop_toBottomOf="@+id/textView17"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/editTextText6"
+                android:layout_width="225dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="-90dp"
+                android:background="@color/uplaod_image"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/upload_image"
+                android:textAlignment="center"
+                android:textColor="@color/up_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="233dp"
+                android:text="@string/Name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditText"
+                android:layout_width="364dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="9dp"
+                android:background="@color/white"
+                android:hint="@string/Name_answer"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/b_day"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="139dp"
+                android:layout_marginTop="21dp"
+                android:text="@string/daily_routine"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputEditText3"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="79dp"
+                android:text="@string/wakeUp_time"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputEditText2"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/editTextTime"
+                android:layout_width="195dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="19dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:inputType="time"
+                app:layout_constraintStart_toEndOf="@+id/textView22"
+                app:layout_constraintTop_toBottomOf="@+id/textView21"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/editTextText7"
+                android:layout_width="79dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="26dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="@string/work_time_from"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColorHint="@color/hint"
+                app:layout_constraintStart_toEndOf="@+id/textView25"
+                app:layout_constraintTop_toBottomOf="@+id/textView24"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="392dp"
+                android:layout_height="106dp"
+                android:layout_marginTop="164dp"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="152dp"
+                        android:layout_marginTop="28dp"
+                        android:backgroundTint="@color/button"
+                        android:text="@string/next"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="370dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="225dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/aniversary"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-230dp"
+                android:layout_marginTop="-18dp"
+                android:backgroundTint="@color/ten"
+                android:text="@string/add"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/divider"
+                app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color -->
+    <item android:drawable="@android:color/white" />
+    <!-- Outline color and thickness -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFF00" /> <!-- Yellow background color -->
+            <stroke
+                android:width="4dp"
+            android:color="#000000" /> <!-- Black outline color -->
+            <corners android:radius="20dp" /> <!-- Adjust the radius as needed -->
+        </shape>
+    </item>
+</layer-list>
